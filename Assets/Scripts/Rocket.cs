@@ -11,7 +11,7 @@ public class Rocket : MonoBehaviour
     [SerializeField] AudioClip mainEngine;
     [SerializeField] AudioClip deathSound;
     [SerializeField] AudioClip levelCompleteSound;
-
+    [SerializeField] float levelLoadDelay = 2f;
     [SerializeField] ParticleSystem mainEngineParticles;
     [SerializeField] ParticleSystem successParticles;
     [SerializeField] ParticleSystem deathParticles;
@@ -62,11 +62,11 @@ public class Rocket : MonoBehaviour
                 break;
             case "Finish":
                 state = State.Transcending;
-                Invoke("LoadNextScene",1f);
+                Invoke("LoadNextScene", levelLoadDelay);
                 break;
             default:
                 state = State.Dying;
-                Invoke("ReloadCurrentScene", 1f);
+                Invoke("ReloadCurrentScene", levelLoadDelay);
                 break;
         }
     }
