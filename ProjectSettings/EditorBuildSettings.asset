@@ -6,9 +6,30 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Start.unity
     guid: bdbe16bcf10ec8e49b40b680fa20b7dc
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/StartMove.unity
+    guid: 7d4b6318708fd004a86a47c35ddf7416
+  - enabled: 1
+    path: Assets/Scenes/OneDiagnol.unity
+    guid: 0316bed64a9ebc843ab3e70fbb7f290d
+  - enabled: 1
+    path: Assets/Scenes/TwoDiagnols.unity
+    guid: 864289ed2de99994d8a4011c672b85e8
+  - enabled: 1
+    path: Assets/Scenes/MovingDiagnols.unity
+    guid: e27dadf0ec19006409480d62f38b1c4c
+  - enabled: 1
+    path: Assets/Scenes/UTurn.unity
+    guid: a963ffd537a1b6a4ca8db14ff409373b
+  - enabled: 1
+    path: Assets/Scenes/UTurn 1.unity
+    guid: dd045185e5073134ea3b1cec71907e8e
+  - enabled: 1
+    path: Assets/Scenes/UTurn 2.unity
+    guid: 5287a606d2b18cb4c8f9f2916d4f3121
+  - enabled: 1
+    path: Assets/Scenes/MovingPillars.unity
     guid: 26b9393200369c443adfe8a73f589c78
   m_configObjects: {}
