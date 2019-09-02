@@ -18,7 +18,6 @@ public class Rocket : MonoBehaviour
 
     Rigidbody rigidBody;
     new AudioSource audio;
-
     bool isTransitioning = false;
     bool collisionsDisabled = false;
     
