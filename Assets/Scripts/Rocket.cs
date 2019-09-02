@@ -155,6 +155,7 @@ public class Rocket : MonoBehaviour
     private void StartSuccessSequence()
     {
         isTransitioning = true;
+        GameObject.Find("Timer Text").SendMessage("StopTimerSuccess");
         audio.Stop();
         audio.PlayOneShot(levelCompleteSound);
         successParticles.Play();
@@ -164,6 +165,7 @@ public class Rocket : MonoBehaviour
     private void StartDeathSequence()
     {
         isTransitioning = true;
+        GameObject.Find("Timer Text").SendMessage("StopTimerFail");
         audio.Stop();
         audio.PlayOneShot(deathSound);
         deathParticles.Play();
